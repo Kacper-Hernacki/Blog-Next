@@ -11,15 +11,15 @@ function BlogList({ posts }: Props) {
 
   return (
     <div>
-      <hr className="mb-10" />
+      <hr className="max-w-7xl mb-72" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-10 gap-y-16 pb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-10 gap-y-16 pt-10 pb-24">
         {posts?.map(post => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-            <div className="flex flex-col group cursor-pointer">
-              <div className="relative w-full h-80 drop-shadow-xl group-hover:scale-105 transition-transform duration-200 ease-out">
+            <div className="flex flex-col group cursor-pointer border-solid border-2 border-gray-800 rounded-2xl cursor-pointer  bg-gray-800">
+              <div className="relative w-full h-80 drop-shadow-xl">
                 <Image
-                  className="object-cover object-left lg:object-center"
+                  className="object-cover object-left lg:object-center rounded-t-2xl"
                   src={urlFor(post.mainImage).url()}
                   alt={post.author.name}
                   fill
@@ -54,12 +54,12 @@ function BlogList({ posts }: Props) {
                 </div>
               </div>
 
-              <div className="mt-5 flex-1">
-                <p className="underline text-lg font-bold">{post.title}</p>
-                <p className="line-clamp-2 text-gray-500">{post.description}</p>
+              <div className="mt-5 flex-1 p-3">
+                <p className="text-lg font-bold text-gray-50">{post.title}</p>
+                <p className="line-clamp-2 text-gray-400">{post.description}</p>
               </div>
 
-              <p className="mt-5 font-bold flex items-center group-hover:underline">
+              <p className="p-3 font-bold flex items-center group-hover:underline">
                 Read Post
                 <ArrowUpRightIcon className="ml-2 h-4 w-4" />
               </p>
