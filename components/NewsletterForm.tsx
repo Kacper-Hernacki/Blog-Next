@@ -43,7 +43,7 @@ export default function NewsletterForm() {
 
   return (
     <Container className="flex w-full justify-center mt-10">
-      <form className="sm:max-[500px]:m-6 mt-80 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl h-96">
+      <form className="sm:max-[500px]:m-6 mt-80 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl">
         <h2 className="max-[600px]:text-xl text-2xl font-bold max-w-md text-gray-50">
           Do you want to be updated with the latest tech stuff?
         </h2>
@@ -99,7 +99,17 @@ export default function NewsletterForm() {
 }
 
 const Container = styled.div`
-  @media (max-width: 500px) {
+  form{
+    height: 335px;
+  }
+
+  @media (max-width: 940px) {
+    form{
+      height: 360px;
+    }
+  }
+  
+  @media (max-width: 800px) {
     flex-direction: column;
     
     form{
@@ -112,10 +122,10 @@ const Container = styled.div`
 const ThreeDContainer = styled.div`
   canvas {
     z-index: 100;
-    height: 600px !important;
+    height: 660px !important;
     width: 400px !important;
 
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       display: none !important;
     }
   }
