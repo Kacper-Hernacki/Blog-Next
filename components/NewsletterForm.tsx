@@ -42,7 +42,7 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="flex w-full justify-center mt-10">
+    <Container className="flex w-full justify-center mt-10">
       <form className="sm:max-[500px]:m-6 mt-80 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl h-96">
         <h2 className="max-[600px]:text-xl text-2xl font-bold max-w-md text-gray-50">
           Do you want to be updated with the latest tech stuff?
@@ -94,13 +94,30 @@ export default function NewsletterForm() {
           <OrbitControls autoRotate />
         </Canvas>
       </ThreeDContainer>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  @media (max-width: 500px) {
+    flex-direction: column;
+    
+    form{
+      height: 450px;
+    }
+  }
+`
+
+
 const ThreeDContainer = styled.div`
   canvas {
     z-index: 100;
     height: 600px !important;
     width: 400px !important;
+
+    @media (max-width: 500px) {
+      display: none !important;
+    }
   }
 `;
+

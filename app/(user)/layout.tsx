@@ -19,10 +19,10 @@ export default function RootLayout({
     {children}
     <CookieConsent
       location="bottom"
-      buttonText="I am aware 🚀"
+      buttonText="I am aware 🍪"
       cookieName="customCookie"
-      style={{ background: "#2B373B" }}
-      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+      style={{ background: "#1F2937" }}
+      buttonStyle={{ color: "#fff", fontSize: "13px", backgroundColor: "#3B82F6" }}
       expires={150}
     >
       This website uses cookies to enhance the user experience.
