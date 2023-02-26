@@ -1,3 +1,4 @@
+//"use client"
 import groq from "groq";
 import { client } from "../../../../lib/sanity.client";
 import Image from "next/image";
@@ -27,6 +28,8 @@ async function Post({ params: { slug } }: Props) {
   if(!post){
     return <div>Loading</div>
   }
+
+  console.log('🚀 ',post)
 
   return (
     <article className="mt-80 px-10 pb-28">

@@ -22,7 +22,7 @@ export default function RootLayout({
       buttonText="I am aware 🍪"
       cookieName="customCookie"
       style={{ background: "#1F2937" }}
-      buttonStyle={{ color: "#fff", fontSize: "13px", backgroundColor: "#3B82F6" }}
+      buttonStyle={{borderRadius:"16px", color: "#fff", fontSize: "13px", backgroundColor: "#3B82F6" }}
       expires={150}
     >
       This website uses cookies to enhance the user experience.

@@ -11,7 +11,7 @@ function Banner() {
           <h1 className="max-[600px]:text-4xl text-7xl text-gray-200 mb-2">Coding Daily Blog</h1>
           <h2 className="mt-5 md:mt-0 text-gray-50">
             Welcome to
-            <span className="underline decoration-4 decoration-blue-500 mx-1">
+            <span className="underline underline-offset-4 decoration-4 decoration-blue-500 mx-1">
             The most practical
           </span>
             devs blog in the Planet

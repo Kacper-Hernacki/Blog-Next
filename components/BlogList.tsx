@@ -16,7 +16,7 @@ function BlogList({ posts }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-10 gap-y-16 pt-10 pb-24">
         {posts?.map(post => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-            <div className="flex flex-col group cursor-pointer border-solid border-2 border-gray-800 rounded-2xl cursor-pointer  bg-gray-800">
+            <div className="flex flex-col group hover:shadow-md hover:shadow-white ease-in-out cursor-pointer border-solid border-2 border-gray-800 rounded-2xl cursor-pointer  bg-gray-800">
               <div className="relative w-full h-80 drop-shadow-xl">
                 <Image
                   className="object-cover object-left lg:object-center rounded-t-2xl"
