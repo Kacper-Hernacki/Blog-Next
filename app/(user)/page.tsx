@@ -29,7 +29,13 @@ export default async function HomePage() {
   const posts = await client.fetch(query);
 
   return (
-    <BlogList posts={posts} />
-
+    <>
+      <BlogList posts={posts} />
+      {/*<EmbeddedNewsletter/>*/}
+      {/*<MediumArticles/>*/}
+      {/*<EmbeddedTweets/>*/}
+      {/*<EmbeddedInstagram/>*/}
+      {/*<YoutubeVideos/>*/}
+    </>
   );
 }

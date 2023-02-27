@@ -4,7 +4,7 @@ import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMedium
 
 function Banner() {
   return (
-    <div className="absolute top-15 h-72 bg-black w-full">
+    <div className="absolute top-15 h-72 bg-black w-full shadow-2xl">
       <Image className="w-full object-cover" src={backgroundSpace} alt="background" fill />
       <div className="absolute top-0 w-full h-72 bg-gradient-to-b from-black to-transparent" />
       <div className="absolute z-10 flex flex-col lg:flex-row lg:space-x-5 w-full justify-between font-bold px-10 py-5 mb-10">
