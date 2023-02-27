@@ -23,26 +23,26 @@ function Banner() {
           New content for learning | The latest tech | debugging parties | huge community
         </p>
 
-        <div className="flex justify-left items-center w-full h-32">
-          <a target="_blank" href="https://www.instagram.com/Kacper.hernacki" className="mr-2">
+        <div className="flex justify-left items-center  max-w-sm h-32 min-[800px]:flex-col">
+          <a target="_blank" href="https://www.instagram.com/Kacper.hernacki" className="mr-2 min-[800px]:m-2">
             <AiOutlineInstagram className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href="https://www.twitter.com/kacperhernacki" className="mr-2">
+          <a target="_blank" href="https://www.twitter.com/kacperhernacki" className="mr-2 min-[800px]:m-2">
             <AiOutlineTwitter className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href="https://youtube.com/channel/UCTi-LX8VSgD_It9jDf8lpDQ" className="mr-2">
+          <a target="_blank" href="https://youtube.com/channel/UCTi-LX8VSgD_It9jDf8lpDQ" className="mr-2 min-[800px]:m-2">
             <AiOutlineYoutube className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href="" className="mr-2">
+          <a target="_blank" href="" className="mr-2 min-[800px]:m-2">
             <FaTiktok className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href="https://www.github.com/Kacper-Hernacki" className="mr-2">
+          <a target="_blank" href="https://www.github.com/Kacper-Hernacki" className="mr-2 min-[800px]:m-2">
             <AiOutlineGithub className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href="http://linkedin.com/in/kacper-hernacki-965161203" className="mr-2">
+          <a target="_blank" href="http://linkedin.com/in/kacper-hernacki-965161203" className="mr-2 min-[800px]:m-2">
             <AiOutlineLinkedin className="text-xl text-white cursor-pointer" />
           </a>
-          <a target="_blank" href=" https://medium.com/@hernackikacper">
+          <a target="_blank" href=" https://medium.com/@hernackikacper" className="mr-2 min-[800px]:m-2">
             <AiOutlineMedium className="text-xl text-white cursor-pointer" />
           </a>
         </div>
