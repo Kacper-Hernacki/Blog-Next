@@ -29,8 +29,6 @@ async function Post({ params: { slug } }: Props) {
     return <div>Loading</div>
   }
 
-  console.log('🚀 ',post)
-
   return (
     <article className="mt-80 px-10 pb-28">
 
