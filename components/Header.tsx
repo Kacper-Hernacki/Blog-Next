@@ -5,14 +5,14 @@ import styled from "styled-components";
 
 function Header() {
   return (
-    <HeaderWrapper className="w-100 flex items-center justify-between bg-gray-800 font-bold text-gray-50 px-10 py-5">
+    <HeaderWrapper className="w-100 flex items-center justify-between bg-gray-800 font-bold text-gray-50 px-10 py-5 max-[800px]:px-2">
       <div className="flex justify-center items-center">
         <Link href={"/"}>
         <Image src={logo} alt="" width={250} height={100}/>
         </Link>
         <span className="ml-2 text-xs bg-blue-400 px-2 py-1 rounded-xl">Beta</span>
       </div>
-      <p>See my courses</p>
+      <p className='max-[800px]:hidden'>See my courses</p>
     </HeaderWrapper>
   );
 };

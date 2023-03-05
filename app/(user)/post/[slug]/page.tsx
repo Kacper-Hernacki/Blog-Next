@@ -30,16 +30,15 @@ async function Post({ params: { slug } }: Props) {
   }
 
   return (
-    <article className="mt-80 px-10 pb-28">
-
-      <section className="space-y-2 border border-b-cyan-700 text-white">
+    <article className="absolute mt-80 pb-28 w-full max-w-2xl left-1/2 -translate-x-1/2 p-4">
+      <section className="text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image className="object-cover object-center mx-auto" src={urlFor(post?.mainImage)?.url()} alt={post.author.name} fill />
           </div>
         </div>
       </section>
-      <section className="mb-10 p-5 bg-gray-500 w-full">
+      <section className="mb-10 p-5 bg-gray-500 w-full rounded-2xl">
         <div className="flex flex-col md:flex-row justify-between gap-y-5">
           <div>
             <h1 className="text-4xl font-extrabold">

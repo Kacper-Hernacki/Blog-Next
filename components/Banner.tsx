@@ -7,6 +7,7 @@ function Banner() {
     <div className="absolute top-15 h-72 bg-black w-full shadow-2xl">
       <Image className="w-full object-cover" src={backgroundSpace} alt="background" fill />
       <div className="absolute top-0 w-full h-72 bg-gradient-to-b from-black to-transparent" />
+
       <div className="absolute z-10 flex flex-col lg:flex-row lg:space-x-5 w-full justify-between font-bold px-10 py-5 mb-10">
         <div>
           <h1 className="max-[600px]:text-4xl text-7xl text-gray-200 mb-2">Coding Daily Blog</h1>
@@ -23,7 +24,7 @@ function Banner() {
           New content for learning | The latest tech | debugging parties | huge community
         </p>
 
-        <div className="flex justify-left items-center  max-w-sm h-32 min-[800px]:flex-col">
+        <div className="flex justify-left items-center  max-w-sm h-32 min-[1000px]:flex-col">
           <a target="_blank" href="https://www.instagram.com/Kacper.hernacki" className="mr-2 min-[800px]:m-2">
             <AiOutlineInstagram className="text-xl text-white cursor-pointer" />
           </a>
@@ -47,6 +48,9 @@ function Banner() {
           </a>
         </div>
       </div>
+
+      <div className='mt-40 absolute w-full h-32  bg-gradient-to-t from-gray-900'/>
+      <div className='mt-72 absolute w-full h-48  bg-gradient-to-b from-gray-900'/>
     </div>
   );
 }

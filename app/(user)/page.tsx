@@ -4,6 +4,9 @@ import { client } from "../../lib/sanity.client";
 import { PreviewSuspense } from "@sanity/preview-kit";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
+import EmbeddedNewsletter from "../../components/EmbeddedNewsletter";
+import EmbeddedTweets from "../../components/EmbeddedTwitter";
+import EmbeddedInstagram from "../../components/EmbeddedInstagram";
 
 const query = groq`
 *[_type=='post'] {
@@ -31,10 +34,15 @@ export default async function HomePage() {
   return (
     <>
       <BlogList posts={posts} />
-      {/*<EmbeddedNewsletter/>*/}
+      <EmbeddedTweets />
+      {/*<EmbeddedInstagram />*/}
+
+      <EmbeddedNewsletter />
+
+
       {/*<MediumArticles/>*/}
-      {/*<EmbeddedTweets/>*/}
-      {/*<EmbeddedInstagram/>*/}
+
+
       {/*<YoutubeVideos/>*/}
     </>
   );

@@ -11,9 +11,9 @@ function BlogList({ posts }: Props) {
 
   return (
     <div>
-      <hr className="max-w-7xl mb-72" />
-      <h1 className='text-4xl font-bold text-center pt-6'>Check the latest articles</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-10 gap-y-16 pt-10 pb-24">
+      <hr className="max-w-7xl mb-80" />
+      <h1 className='absolute w-full text-center text-4xl font-bold text-center pt-6 text-white'>Check the latest articles</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-10 gap-y-16 pt-32 pb-24">
         {posts?.map(post => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
             <div className="flex flex-col group ease-in-out cursor-pointer rounded-2xl cursor-pointer bg-gray-800 shadow-2xl">

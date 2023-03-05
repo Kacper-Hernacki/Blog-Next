@@ -26,6 +26,7 @@ export default function NewsletterForm() {
   const router = useRouter();
   const { data } = useSWR("/api/getSubscribers", (apiURL: string) => fetch(apiURL).then(res => res.json()));
 
+
   const subscribe = async () => {
     setState("LOADING");
     setErrorMessage(null);
@@ -43,7 +44,7 @@ export default function NewsletterForm() {
 
   return (
     <Container className="flex w-full justify-center mt-10">
-      <form className="sm:max-[500px]:m-6 mt-80 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl">
+      <form className="sm:max-[500px]:m-6 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl">
         <h2 className="max-[600px]:text-xl text-2xl font-bold max-w-md text-gray-50">
           Do you want to be updated with the latest tech stuff?
         </h2>
@@ -83,7 +84,7 @@ export default function NewsletterForm() {
         )}
       </form>
 
-      <ThreeDContainer className="grid place-items-center mt-80 cursor-grabbing">
+      <ThreeDContainer className="grid place-items-center cursor-grabbing">
         <Canvas className="h-96" shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
           <ambientLight intensity={0.7} />
           <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
@@ -99,25 +100,24 @@ export default function NewsletterForm() {
 }
 
 const Container = styled.div`
-  form{
+  form {
     height: 335px;
   }
 
   @media (max-width: 940px) {
-    form{
+    form {
       height: 360px;
     }
   }
-  
+
   @media (max-width: 800px) {
     flex-direction: column;
-    
-    form{
+
+    form {
       height: 450px;
     }
   }
-`
-
+`;
 
 const ThreeDContainer = styled.div`
   canvas {
