@@ -25,6 +25,7 @@
     "react-icons": "^4.7.1",
     "react-portable-text": "^0.6.0",
     "react-twitter-embed": "^4.0.4",
+    "react-youtube": "^10.1.0",
     "sanity": "^3.0.0",
     "sanity-plugin-iframe-pane": "^2.1.1",
     "styled-components": "^5.3.6",
