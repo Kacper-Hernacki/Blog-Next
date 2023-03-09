@@ -44,13 +44,13 @@ export default function NewsletterForm() {
 
   return (
     <Container className="flex w-full justify-center mt-10">
-      <form className="sm:max-[500px]:m-6 mb-32 shadow-xl flex-col mx-5 mb-4 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl">
-        <h2 className="max-[600px]:text-xl text-2xl font-bold max-w-md text-gray-50">
+      <form className="sm:max-[500px]:m-6  mb-32 shadow-xl flex-col mx-5 mb-3 max-w-screen-md align-middle justify-center p-7 bg-gray-800 rounded-xl">
+        <h3 className="max-[600px]:text-xl text-2xl font-bold max-w-md text-gray-50">
           Do you want to be updated with the latest tech stuff?
-        </h2>
-        <h2 className="max-[600px]:text-xl text-2xl font-bold mb-4 text-gray-50">
+        </h3>
+        <h3 className="max-[600px]:text-xl text-2xl font-bold mb-3 text-gray-50">
           Please leave your mail below, and sign up!
-        </h2>
+        </h3>
         <div className="flex max-[600px]:flex-col">
           <input className=" max-[600px]:mb-3 max-[600px]:mr-0 max-[600px]:text-xl:mr-0 mr-2 shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                  type="email"
@@ -68,11 +68,11 @@ export default function NewsletterForm() {
         </div>
 
         {(data) ?
-          <h2 className="max-[600px]:text-xl mt-4 text-2xl font-bold text-gray-200">Join <span className="font-bold text-sky-800">{data}</span> happy
-            subscribers!</h2> : null
+          <h3 className="max-[600px]:text-xl mt-4 text-2xl font-bold text-gray-200">Join <span className="font-bold text-sky-800">{data}</span> happy
+            subscribers!</h3> : null
         }
-        <h4 className="font-bold mb-4 mt-2 max-w-md text-gray-400">
-          I provide there a valuable content, trusted throughout thousands of followers, across many social platforms.
+        <h4 className="font-bold mt-2 max-w-md text-gray-400">
+          I provide there a valuable content, trusted throughout thousands of followers.
           You
           can unsubscribe anytime.
         </h4>
@@ -80,7 +80,7 @@ export default function NewsletterForm() {
           <p className="w-1/2 mt-2 text-red-600">{errorMessage}</p>
         )}
         {state === "SUCCESS" && (
-          <p className="text-2xl mt-2 font-bold text-sky-900">Thank you for the subscription 🎉</p>
+          <p className="text-2xl font-bold text-sky-900">Thank you for the subscription 🎉</p>
         )}
       </form>
 
