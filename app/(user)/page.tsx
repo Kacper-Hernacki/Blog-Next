@@ -7,6 +7,7 @@ import BlogList from "../../components/BlogList";
 import EmbeddedNewsletter from "../../components/EmbeddedNewsletter";
 import EmbeddedTweets from "../../components/EmbeddedTwitter";
 import EmbeddedYoutube from "../../components/EmbeddedYoutube";
+import EmbeddedMedium from "../../components/EmbeddMedium";
 
 const query = groq`
 *[_type=='post'] {
@@ -38,7 +39,8 @@ export default async function HomePage() {
       {/*<EmbeddedInstagram />*/}
       <EmbeddedYoutube />
       <EmbeddedNewsletter />
-      {/*<MediumArticles/>*/}
+      <EmbeddedMedium/>
+      {/*EmbeddGithub*/}
     </>
   );
 }

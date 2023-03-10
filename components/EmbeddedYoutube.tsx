@@ -1,6 +1,6 @@
 "use client";
 import YouTube, { YouTubeProps } from "react-youtube";
-
+import {isMobile} from 'react-device-detect';
 function EmbeddedYoutube() {
 
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
@@ -9,8 +9,8 @@ function EmbeddedYoutube() {
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "390",
-    width: "640",
+    height: isMobile ? "150" : "390",
+    width: isMobile ? "200" : "640",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
