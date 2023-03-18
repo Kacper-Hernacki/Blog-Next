@@ -22,7 +22,7 @@ function EmbeddedMedium() {
 
 
   return (
-    <div className="bg-gray-800 -mt-40">
+    <div className="bg-gray-800 -mt-24">
       <div className="w-full h-24 absolute bg-gradient-to-b from-gray-600" />
       <h1 className="absolute w-full text-center text-4xl font-bold p-6 text-white max-[800px]:pb-8">Medium
         articles</h1>

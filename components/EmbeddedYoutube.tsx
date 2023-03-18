@@ -23,8 +23,8 @@ function EmbeddedYoutube() {
       <h1 className="absolute w-full text-center text-4xl font-bold p-6 text-white max-[800px]:pb-8 mb-8">Latest YouTube
         Videos</h1>
       <div className="grid place-items-center max-w-2xl p-6 mt-4 pb-8 mx-auto pt-28">
-        <YouTube className="mt-4" videoId="gl6jD4qIO_8" opts={opts} onReady={onPlayerReady} />;
-        <YouTube className="mt-4" videoId="sCe_ewIBnYQ" opts={opts} onReady={onPlayerReady} />;
+        <YouTube className="my-4" videoId="gl6jD4qIO_8" opts={opts} onReady={onPlayerReady} />
+        <YouTube className="mt-4" videoId="sCe_ewIBnYQ" opts={opts} onReady={onPlayerReady} />
       </div>
       <div className="w-full h-32 bg-gradient-to-t from-gray-600" />
     </div>
