@@ -67,3 +67,13 @@ interface Title {
   _type: "string";
   current: string;
 }
+
+interface InstagramEmbeds {
+  Embeds: {
+    process: () => void;
+  };
+}
+
+interface Window {
+  instgrm: InstagramEmbeds;
+}

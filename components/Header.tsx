@@ -12,7 +12,7 @@ function Header() {
         </Link>
         <span className="ml-2 text-xs bg-blue-400 px-2 py-1 rounded-xl">Beta</span>
       </div>
-      <p className='max-[800px]:hidden'>See my courses</p>
+      {/*<p className='max-[800px]:hidden'>See my courses</p>*/}
     </HeaderWrapper>
   );
 };
