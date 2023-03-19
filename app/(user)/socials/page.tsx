@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export default function SocialsPage() {
   return (
-    <div className="mt-80 absolute -translate-x-1/2 left-1/2 right-1/2">
+    <div className="mt-80 z-10 absolute -translate-x-1/2 left-1/2 right-1/2">
       <div className="flex flex-col justify-left items-center mb-32">
         <InstagramLink target="_blank" href="https://www.instagram.com/Kacper.hernacki" className="mt-8 max-[800px]:mt-2 max-[800px]:p-2 min-[800px]:m-2 flex justify-center items-center border-2 p-4 text-white rounded-2xl w-80 ease-in-out duration-300">
           Instagram

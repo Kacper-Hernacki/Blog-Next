@@ -1,11 +1,11 @@
-//"use client"
+// "use client"
 import groq from "groq";
 import { client } from "../../../../lib/sanity.client";
 import Image from "next/image";
 import urlFor from "../../../../lib/urlFor";
-import {PortableText} from '@portabletext/react'
+import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../../../components/RichTextComponent";
-
+import ShareModule from "../../../../components/shareModule";
 
 type Props = {
   params: {
@@ -14,6 +14,7 @@ type Props = {
 }
 
 async function Post({ params: { slug } }: Props) {
+
   const query = groq`
   *[_type=='post' && slug.current == $slug][0]
   {
@@ -25,8 +26,8 @@ async function Post({ params: { slug } }: Props) {
 
   const post: Post = await client.fetch(query, { slug });
 
-  if(!post){
-    return <div>Loading</div>
+  if (!post) {
+    return <div>Loading</div>;
   }
 
   return (
@@ -75,7 +76,8 @@ async function Post({ params: { slug } }: Props) {
           </div>
         </div>
       </section>
-      <PortableText value={post.body} components={RichTextComponents}/>
+      <PortableText value={post.body} components={RichTextComponents} />
+      <ShareModule title={post.title} description={post.description} slug={slug}/>
     </article>
   );
 }

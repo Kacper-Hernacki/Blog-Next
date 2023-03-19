@@ -32,13 +32,17 @@ const bounce = keyframes`
 `
 
 const LoadingContainer = styled.div`
-  position: absolute;
-  width: 100vw !important;
-  height: 100vh !important;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   place-items: center;
+  background-color: #111827;
 
-  img,svg {
+  img, svg {
     animation: ${bounce} 5s linear infinite !important;
   }
 `
