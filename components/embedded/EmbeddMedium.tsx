@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ClientSideRoute from "./ClientSideRoute";
+import ClientSideRoute from "../ClientSideRoute";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 

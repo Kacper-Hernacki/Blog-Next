@@ -5756,11 +5756,6 @@ react-focus-lock@^2.8.1:
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
 
-react-github-repo-card@^0.0.1-beta.1:
-  version "0.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/react-github-repo-card/-/react-github-repo-card-0.0.1-beta.1.tgz#f213d585cb367aa6db1897dd0a668f86a6aa4924"
-  integrity sha512-m+qOfHLoqB/y0Kkpovd2B9xxE2tE9fMB2NWkEweWv+NeKzxvvyofA4gyVXIkbCeKu25kBY6nHN9hWr4NV0ddYQ==
-
 react-icons@^4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"

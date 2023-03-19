@@ -4,10 +4,11 @@ import { client } from "../../lib/sanity.client";
 import { PreviewSuspense } from "@sanity/preview-kit";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
-import EmbeddedNewsletter from "../../components/EmbeddedNewsletter";
-import EmbeddedTweets from "../../components/EmbeddedTwitter";
-import EmbeddedYoutube from "../../components/EmbeddedYoutube";
-import EmbeddedMedium from "../../components/EmbeddMedium";
+import EmbeddedNewsletter from "../../components/embedded/EmbeddedNewsletter";
+import EmbeddedTweets from "../../components/embedded/EmbeddedTwitter";
+import EmbeddedYoutube from "../../components/embedded/EmbeddedYoutube";
+import EmbeddedMedium from "../../components/embedded/EmbeddMedium";
+import EmbeddedGithub from "../../components/embedded/EmbeddedGithub";
 
 const query = groq`
 *[_type=='post'] {
@@ -38,9 +39,10 @@ export default async function HomePage() {
       <EmbeddedTweets />
       {/*<EmbeddedInstagram />*/}
       <EmbeddedYoutube />
+      <EmbeddedGithub />
       <EmbeddedNewsletter />
-      <EmbeddedMedium/>
-      {/*EmbeddGithub*/}
+      <EmbeddedMedium />
+
     </>
   );
 }
