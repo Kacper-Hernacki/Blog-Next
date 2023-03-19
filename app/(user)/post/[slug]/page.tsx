@@ -77,7 +77,7 @@ async function Post({ params: { slug } }: Props) {
         </div>
       </section>
       <PortableText value={post.body} components={RichTextComponents} />
-      <ShareModule title={post.title} description={post.description} slug={slug}/>
+      {/*<ShareModule title={post.title} description={post.description} slug={slug}/>*/}
     </article>
   );
 }
