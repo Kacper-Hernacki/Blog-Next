@@ -36,14 +36,17 @@ export default async function HomePage() {
 
   return (
     <>
-      <BlogList posts={posts} />
+      {posts?.length > 0 ?
+        <BlogList posts={posts} />
+        :
+        <></>
+      }
       <EmbeddedTweets />
       <EmbeddedInstagram />
       <EmbeddedYoutube />
       <EmbeddedGithub />
       <EmbeddedNewsletter />
       <EmbeddedMedium />
-
     </>
   );
 }

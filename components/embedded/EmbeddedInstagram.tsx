@@ -1,5 +1,4 @@
 "use client";
-import Embed from "react-embed";
 
 const InstagramEmbed = ({ url }) => {
   return (
@@ -25,7 +24,7 @@ function EmbeddedInstagram() {
         <InstagramEmbed url="https://www.instagram.com/p/ChcYl3kjMw7" />
         <InstagramEmbed url="https://www.instagram.com/reel/Cd8Lo1OjBvN" />
         <InstagramEmbed url="https://www.instagram.com/p/ChcYl3kjMw7" />
-     </div>
+      </div>
     </div>
   );
 }
