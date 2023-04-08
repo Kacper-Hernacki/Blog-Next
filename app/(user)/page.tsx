@@ -11,6 +11,7 @@ import EmbeddedMedium from "../../components/embedded/EmbeddMedium";
 import EmbeddedGithub from "../../components/embedded/EmbeddedGithub";
 import EmbeddedInstagram from "../../components/embedded/EmbeddedInstagram";
 
+
 const query = groq`
 *[_type=='post'] {
 ...,
@@ -39,7 +40,7 @@ export default async function HomePage() {
       {posts?.length > 0 ?
         <BlogList posts={posts} />
         :
-        <></>
+        <div className="mt-80 pt-6"></div>
       }
       <EmbeddedTweets />
       <EmbeddedInstagram />
